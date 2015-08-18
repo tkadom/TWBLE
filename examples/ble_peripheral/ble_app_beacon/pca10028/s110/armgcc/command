@@ -1,0 +1,1 @@
+dfu genpkg kadom.zip --application-version 0xFFFFFFFF --sd-req 0xfffe --application nrf51422_xxac_s110.hex --dev-revision 0xFFFF --dev-type 0xFFFF

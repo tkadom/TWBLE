@@ -1,0 +1,23 @@
+{
+    "manifest": {
+        "application": null,
+        "bootloader": null,
+        "softdevice": {
+            "bin_file": "dfu_test_softdevice_b.bin",
+            "dat_file": "dfu_test_softdevice_b.dat",
+            "init_packet_data": {
+                "application_version": 4294967295,
+                "compression_type": null,
+                "device_revision": 65535,
+                "device_type": 65535,
+                "firmware_crc16": 51483,
+                "firmware_hash": null,
+                "packet_version": null,
+                "softdevice_req": [
+                    65534
+                ]
+            }
+        },
+        "softdevice_bootloader": null
+    }
+}
