@@ -43,6 +43,9 @@ int main(void)
             LEDS_INVERT(1 << leds_list[i]);
             nrf_delay_ms(500);
         }
+        /*LEDS_INVERT(1 << leds_list[0]);
+        nrf_delay_ms(500); */
+
     }
 }
 

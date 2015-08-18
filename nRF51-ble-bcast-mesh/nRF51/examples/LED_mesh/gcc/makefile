@@ -5,7 +5,7 @@
 #------------------------------------------------------------------------------
 
 #TARGET_BOARD         ?= BOARD_PCA10000
-TARGET_BOARD         ?= BOARD_PCA10001
+TARGET_BOARD         ?= BOARD_PCA20006
 
 USE_DBGLOG           := "no"
 USE_RBC_MESH_SERIAL  := "no"

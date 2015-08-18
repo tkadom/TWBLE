@@ -189,7 +189,20 @@ void test_app_init(void)
     nrf_gpio_pin_clear(LED_RGB_BLUE);
 #endif
 
+#ifdef BOARD_PCA10031
+    nrf_gpio_pin_clear(LED_RGB_RED);
+    nrf_gpio_pin_clear(LED_RGB_GREEN);
+    nrf_gpio_pin_clear(LED_RGB_BLUE);
+#endif
+
 #ifdef BOARD_PCA10001
+    nrf_gpio_range_cfg_output(0, 32);
+    nrf_gpio_cfg_input(BUTTON_0, BUTTON_PULL);
+    nrf_gpio_cfg_input(BUTTON_1, BUTTON_PULL);
+    gpiote_init();
+#endif
+
+#ifdef BOARD_PCA10031
     nrf_gpio_range_cfg_output(0, 32);
     nrf_gpio_cfg_input(BUTTON_0, BUTTON_PULL);
     nrf_gpio_cfg_input(BUTTON_1, BUTTON_PULL);

@@ -45,6 +45,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     #define LED_1 LED_RGB_GREEN
 #endif
 
+#ifdef BOARD_PCA20006
+    #define LED_0 LED_RGB_RED
+    #define LED_1 LED_RGB_GREEN
+#endif
 
 void led_config(uint8_t led, uint8_t conf);
 
